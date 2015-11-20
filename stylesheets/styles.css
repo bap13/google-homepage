@@ -1,0 +1,252 @@
+css reset
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  padding-bottom: 95px;
+}
+
+body {
+  background-color: rgb(255,255,255);
+  min-width: 960px;
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+  padding-bottom: 65px;
+}
+
+/*navigation*/
+
+nav {
+  height: 30px;
+  width: 100%;
+  min-width: 930px;
+  position: fixed;
+  top: 16px;
+}
+
+.top-nav {
+  min-width: 331px;
+  padding-left: 30px;
+  padding-right: 30px;
+  float: right;
+}
+
+li {
+  display: inline-block;
+  padding-left: 15px;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+.username, .top-link {
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.username {
+  color: rgba(0,0,0,.55);
+}
+
+.top-link a {
+  color: rgb(34,34,34);
+}
+
+.top-link a:hover {
+  color: rgb(0,0,0);
+  text-decoration: underline;
+}
+
+.apps-icon, .little-bell {
+  background: url('../images/top_sprites.png') no-repeat;
+}
+
+.apps-icon {
+	background-position: -139px -45px;
+	width: 16px;
+	height: 16px;
+	opacity: .55;
+}
+
+.apps-icon:hover {
+  opacity: 1;
+}
+
+.little-bell {
+	background-position: -200px -26px;
+	width: 8px;
+	height: 9px;
+	position: relative;
+	top: 5px;
+	right: 9px;
+}
+
+.profile-image {
+  background: url('../images/brett_profile_pic.jpg') no-repeat;
+  width: 32px;
+  height: 32px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.notifications {
+  height: 20px;
+  width: 20px;
+  margin-left: 20px;
+  background: rgba(0,0,0,.55);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.notifications:hover {
+  background: rgba(0,0,0,1);
+}
+
+/*search area*/
+
+.logo-big {
+  height: 233px;
+  margin-top: 89px;
+  padding-top: 109px;
+  text-align: center;
+}
+
+.search-area {
+  margin: 0 auto 20px auto;
+  height: 38px;
+  width: 487px;
+}
+
+input[type="text"]:hover {
+  border: 1px solid #aaa;
+}
+
+input[type="text"]:focus {
+  border: 1px solid blue;
+}
+
+input[type="text"] {
+  height: 38px;
+  width: 487px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 55px;
+  margin: 0 auto;
+  text-indent: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+}
+
+.microphone {
+	background: url('../images/microphone.png') no-repeat -3px 0;
+	width: 17px;
+	height: 23px;
+	background-size: 24px 24px;
+	vertical-align: middle;
+	position: relative;
+	top: -30px;
+	left: 430px;
+	margin-left: 20px;
+}
+
+input[type="submit"] {
+  height: 36px;
+  width: 140px;
+  margin: 10px 3px;
+}
+
+.submit {
+  display: inline-block;
+  color: rgb(117,117,117);
+  background-color: rgb(242,242,242);
+  background-image: linear-gradient(0deg, rgb(242,242,242), rgb(250,250,250));
+  border: 1px solid rgb(242,242,242);
+  font-weight: bold;
+  border-radius: 2px;
+}
+  
+.submit:hover {
+  background-image: linear-gradient(0deg, #f1f1f1, #f8f8f8);
+  border-color: #c6c6c6;
+  color: rgb(75,75,75);
+  box-shadow: 0 0 1px;
+}
+
+.submit-buttons {
+  text-align: center;
+}
+
+.promo-link {
+  text-align: center;
+  color: #222;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.promo-link a:hover, footer a:hover {
+  text-decoration: underline;
+}
+
+/*footer*/
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 35px;
+  min-width: 930px;
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+}
+
+footer a {
+  display: inline-block;
+  font-family: arial, sans-serif;
+  color: rgb(102,102,102);
+  font-size: 13px;
+  line-height: 40px;
+}
+
+.right-links {
+  float: right;
+}
+
+.right-links a {
+  padding-right: 27px;
+}
+
+.left-links a {
+  padding-left: 27px;
+}
